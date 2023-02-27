@@ -9,8 +9,21 @@ header{
     background-color: rgb(188, 56, 35);
 }
 
-
-
+h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
 
 .derecha{
     background-color: #025951;

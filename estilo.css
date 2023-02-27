@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(234, 234, 234);
+}
+header{
+    background-color: rgb(188, 56, 35);
+}
+
+
+
+
+.derecha{
+    background-color: #025951;
+}
+
+/* Estilo de los links */
+.links{
+    text-decoration: none;
+    color:rgb(202, 81, 62);
+}
+.links:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+/* Iconos de las REDES */
+.iconosRedes{
+    fill: white;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+.iconosRedes:hover{
+    border-radius: 50%;
+    border: 3px solid  rgb(202, 81, 62);
+}
+
+
+/* Iconos de los SOFTWARE */
+path{
+    fill:white;
+}
+circle{
+    fill:none;
+    stroke: rgb(202, 81, 62);
+    stroke-width: 3px;
+    stroke-dasharray:126;
+    stroke-dashoffset:126;
+}
+.porcentaje1, .porcentaje2{
+    animation: anim1 2s linear forwards;
+}
+.porcentaje3{
+    animation: anim2 2s linear forwards;
+}
+.porcentaje4, .porcentaje5{
+    animation: anim3 2s linear forwards;
+}
+
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: 15;
+    }
+}
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 40;
+    }
+}
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 35;
+    }
+}
+
+/*img full */
+
+.galeria img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+.galeria img:hover{
+    transform: scale(1.1);
+}
+
+.ful-img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0,0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.ful-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.ful-img img{
+    width: 90%;
+    max-width: 600px;
+}
